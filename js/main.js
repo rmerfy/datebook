@@ -211,7 +211,7 @@ calc.addEventListener('click', function(event){
     }
 
     //Х42 = Х41*3
-    let res42 = res41 * x3.value;
+    let res42 = res41 * 3;
     x42.textContent = res42;
     //Х43 = Х42/10
     let res43 = res42 / 10;
