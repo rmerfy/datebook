@@ -200,16 +200,25 @@ calc.addEventListener('click', function(event){
     x40.textContent = res40;
     //x41
     let res41 = 0;
-    if(res27 < res32 && res27 < res37) {
-        res41 = res27;
-    } else if (res32 < res27 && res32 < res37) {
-        res41 = res32;
-    } else if (res37 < res32 && res37 < res41) {
-        res41 = res37;
-    } else {
-        res41 = 1;
-    }
 
+
+    if(res27 < res32) {
+        res41 = res27;
+    } else if (res27 < res37) {
+        res41 = res27;
+    } else if (res32 < res27) {
+        res41 = res32;
+    } else if (res32 < res37) {
+        res41 = res32;
+    } else if (res37 < res32) {
+        res41 = res37;
+    } else if (res37 < res41) {
+        res41 = res37;
+    } else if(res32 == res27 && res32 == res37) {
+        res41 = res32;
+    }
+    
+    console.log(res41);
     //Х42 = Х41*3
     let res42 = res41 * 3;
     x42.textContent = res42;
@@ -243,5 +252,4 @@ calc.addEventListener('click', function(event){
     //Х52 = Х49/(Х7*Х8)
     let res52 = res49 / (x7.value + x8.value);
     x52.textContent = res52;
-    console.log(res41);
 });
