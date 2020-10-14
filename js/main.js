@@ -201,21 +201,25 @@ calc.addEventListener('click', function(event){
     //x41
     let res41 = 0;
 
+    //       false       false
+    // 29700 < 19800 i 29700 < 9900
+    if(res27 < res32 && res27 < res37) {
+        res41 = res27;
+    } //29700
 
-    if(res27 < res32) {
-        res41 = res27;
-    } else if (res27 < res37) {
-        res41 = res27;
-    } else if (res32 < res27) {
+    //    true           false
+    // 19800 < 29700 i 19800 < 9900
+    else if (res32 < res27 && res32 < res37) {
         res41 = res32;
-    } else if (res32 < res37) {
-        res41 = res32;
-    } else if (res37 < res32) {
+    } //19800
+
+    //      true        true 
+    // 9900 < 19800 i 9900 < 29700
+    else if (res37 < res32 && res37 < res27) {
         res41 = res37;
-    } else if (res37 < res41) {
-        res41 = res37;
-    } else if(res32 == res27 && res32 == res37) {
-        res41 = res32;
+    }//9900
+    else {
+        res41 = 0;
     }
     
     console.log(res41);
