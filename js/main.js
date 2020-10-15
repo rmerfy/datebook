@@ -379,8 +379,8 @@ calc.addEventListener('click', function(event){
     if(res29 < res34 && res29 < res39) {
         res77 = res29;
     }
-    //если Х34 < X29 и Х33 < Х39 то Х77 = Х34 проверить!
-    else if (res34 < res29 && res33 < res39) {
+    //если Х34 < X29 и Х33 < Х39 то Х77 = Х34 Исправлено
+    else if (res34 < res29 && res34 < res39) {
         res77 = res34;
     }
     //если Х39 < X34 и Х39 < Х29 то Х77 = Х39
