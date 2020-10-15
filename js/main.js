@@ -49,7 +49,47 @@ let x1 = document.querySelector('.res-x1'),
     x49 = document.querySelector('.res-x49'),
     x50 = document.querySelector('.res-x50'),
     x51 = document.querySelector('.res-x51'),
-    x52 = document.querySelector('.res-x52');
+    x52 = document.querySelector('.res-x52'),
+    x53 = document.querySelector('.res-x53'),
+    x54 = document.querySelector('.res-x54'),
+    x55 = document.querySelector('.res-x55'),
+    x56 = document.querySelector('.res-x56'),
+    x57 = document.querySelector('.res-x57'),
+    x58 = document.querySelector('.res-x58'),
+    x60 = document.querySelector('.res-x60'),
+    x61 = document.querySelector('.res-x61'),
+    x62 = document.querySelector('.res-x62'),
+    x63 = document.querySelector('.res-x63'),
+    x64 = document.querySelector('.res-x64'),
+    x65 = document.querySelector('.res-x65'),
+    x66 = document.querySelector('.res-x66'),
+    x67 = document.querySelector('.res-x67'),
+    x68 = document.querySelector('.res-x68'),
+    x69 = document.querySelector('.res-x69'),
+    x70 = document.querySelector('.res-x70'),
+    x71 = document.querySelector('.res-x71'),
+    x72 = document.querySelector('.res-x72'),
+    x73 = document.querySelector('.res-x73'),
+    x74 = document.querySelector('.res-x74'),
+    x75 = document.querySelector('.res-x75'),
+    x76 = document.querySelector('.res-x76'),
+    x78 = document.querySelector('.res-x78'),
+    x79 = document.querySelector('.res-x79'),
+    x80 = document.querySelector('.res-x80'),
+    x81 = document.querySelector('.res-x81'),
+    x82 = document.querySelector('.res-x82'),
+    x83 = document.querySelector('.res-x83'),
+    x84 = document.querySelector('.res-x84'),
+    x85 = document.querySelector('.res-x85'),
+    x86 = document.querySelector('.res-x86'),
+    x87 = document.querySelector('.res-x87'),
+    x88 = document.querySelector('.res-x88'),
+    x89 = document.querySelector('.res-x89'),
+    x90 = document.querySelector('.res-x90'),
+    x91 = document.querySelector('.res-x91'),
+    x92 = document.querySelector('.res-x92'),
+    x93 = document.querySelector('.res-x93'),
+    x94 = document.querySelector('.res-x94');
 
 
 x3.addEventListener('keyup', function(){
@@ -200,29 +240,19 @@ calc.addEventListener('click', function(event){
     x40.textContent = res40;
     //x41
     let res41 = 0;
-
-    //       false       false
-    // 29700 < 19800 i 29700 < 9900
+  
     if(res27 < res32 && res27 < res37) {
         res41 = res27;
-    } //29700
+    }
 
-    //    true           false
-    // 19800 < 29700 i 19800 < 9900
     else if (res32 < res27 && res32 < res37) {
         res41 = res32;
-    } //19800
+    }
 
-    //      true        true 
-    // 9900 < 19800 i 9900 < 29700
     else if (res37 < res32 && res37 < res27) {
         res41 = res37;
-    }//9900
-    else {
-        res41 = 0;
     }
-    
-    console.log(res41);
+
     //Х42 = Х41*3
     let res42 = res41 * 3;
     x42.textContent = res42;
@@ -256,4 +286,160 @@ calc.addEventListener('click', function(event){
     //Х52 = Х49/(Х7*Х8)
     let res52 = res49 / (x7.value + x8.value);
     x52.textContent = res52;
+    
+    //Х53 = (Х50+Х51+Х52)/10*5
+    let res53 = (res50 + res51 + res52) / 10 * 5;
+    x53.textContent = res53;
+    //Х54 = (Х50+Х51+Х52)/10*3
+    let res54 = (res50 + res51 + res52) / 10 * 3;
+    x54.textContent = res54;
+    //Х55 = (Х50+Х51+Х52)/10*2
+    let res55 = (res50 + res51 + res52) / 10 * 2;
+    x55.textContent = res55;
+    //Х56 = Х53*Х5*Х8
+    let res56 = res53 * x5.value * x8.value;
+    x56.textContent = res56;
+    //Х57 = Х54*Х6*Х8
+    let res57 = res54 * x6.value * x8.value;
+    x57.textContent = res57;
+    //Х58 = Х55*Х7*Х8
+    let res58 = res55 * x7.value * x8.value;
+    x58.textContent = res58;
+
+    let res59 = 0;
+    //если Х28 < X33 и Х28 < Х38 то Х59 = Х28
+    if(res28 < res33 && res28 < res38) {
+        res59 = res28;
+    }
+    //если Х33 < X28 и Х33 < Х38 то Х59 = Х33
+    else if (res33 < res28 && res33 < res38) {
+        res59 = res33;
+    }
+    //если Х38 < X33 и Х38 < Х28 то Х59 = Х38
+    else if (res38 < res33 && res38 < res28) {
+        res59 = res38;
+    }
+
+
+    //X60 = X59*3
+    let res60 = res59 * 3;
+    x60.textContent = res60;
+    //X61 = X60/10
+    let res61 = res60 / 10;
+    x61.textContent = res61;
+    //X62 = X61*5
+    let res62 = res61 * 5;
+    x62.textContent = res62;
+    //X63 = X61*3
+    let res63 = res61 * 3;
+    x63.textContent = res63;
+    //X64 = X61*2
+    let res64 = res61 * 2;
+    x64.textContent = res64;
+    //X65 = X28-X59+X62
+    let res65 = res28 - res59 + res62;
+    x65.textContent = res65;
+    //X66 = X33-X59+X63
+    let res66 = res33 - res59 + res63;
+    x66.textContent = res66;
+    //X67 = X38-X59+X64
+    let res67 = res38 - res59 + res64;
+    x67.textContent = res67;
+    //X68 = X65/(X5*X8)
+    let res68 = res65 / (x5.value * x8.value);
+    x68.textContent = res68;
+    //X69 = X66/(X6*X8)
+    let res69 = res66 / (x6.value * x8.value);
+    x69.textContent = res69;
+    //X70 = X67/(X7*X8)
+    let res70 = res67 / (x7.value * x8.value);
+    x70.textContent = res70;
+    //X71 = (X68+X69+X70)/10*5
+    let res71 = (res68 + res69 + res70) / 10 * 5;
+    x71.textContent = res71;
+    //X72 = (X68+X69+X70)/10*3
+    let res72 = (res68 + res69 + res70) / 10 * 3;
+    x72.textContent = res72;
+    //X73 = (X68+X69+X70)/10*2
+    let res73 = (res68 + res69 + res70) / 10 * 2;
+    x73.textContent = res73;
+    //X74 = X71*X5*X8
+    let res74 = res71 * x5.value * x8.value;
+    x74.textContent = res74;
+    //X75 = X72*X6*X8
+    let res75 = res72 * x6.value * x8.value;
+    x75.textContent = res75;
+    //X76 = X73*X7*X8
+    let res76 = res73 * x7.value * x8.value;
+    x76.textContent = res76;
+    
+    //x77
+    let res77 = 0;
+    //если Х29 < X34 и Х29 < Х39 то Х77 = Х29
+    if(res29 < res34 && res29 < res39) {
+        res77 = res29;
+    }
+    //если Х34 < X29 и Х33 < Х39 то Х77 = Х34 проверить!
+    else if (res34 < res29 && res33 < res39) {
+        res77 = res34;
+    }
+    //если Х39 < X34 и Х39 < Х29 то Х77 = Х39
+    else if (res39 < res34 && res39 < res29) {
+        res77 = res39;
+    }
+    
+
+    //X78 = X77*3
+    let res78 = res77 * 3;
+    x78.textContent = res78;
+    //X79 = X78/10
+    let res79 = res78 / 10;
+    x79.textContent = res79;
+    //X80 = X79*5
+    let res80 = res79 * 5;
+    x80.textContent = res80;
+    //X81 = X79*3
+    let res81 = res79 * 3;
+    x81.textContent = res81;
+    //X82 = X79*2
+    let res82 = res79 * 3;
+    x82.textContent = res82;
+    //X83 = X29-X77+X80
+    let res83 = res29 - res77 + res80;
+    x83.textContent = res83;
+    //X84 = X34-X77+X81
+    let res84 = res34 - res77 + res81;
+    x84.textContent = res84;
+    //X85 = X39-X77+X82
+    let res85 = res39 - res77 + res82;
+    x85.textContent = res85;
+    //X86 = X83/(X5*X8)
+    let res86 = res83 / (x5.value * x8.value);
+    x86.textContent = res86; 
+    //X87 = X84/(X6*X8)
+    let res87 = res84 / (x6.value * x8.value);
+    x87.textContent = res87; 
+    //X88 = X85/(X7*X8)
+    let res88 = res85 / (x7.value * x8.value);
+    x88.textContent = res88; 
+    //X89 = (X86+X87+X87)/10*5
+    let res89 = (res86 + res87 + res87) / 10*5;
+    x89.textContent = res89;
+    //X90 = (X86+X87+X87)/10*3
+    let res90 = (res86 + res87 + res87) / 10*3;
+    x90.textContent = res90;
+    //X91 = (X86+X87+X87)/10*2
+    let res91 = (res86 + res87 + res87) / 10*2;
+    x91.textContent = res91;
+    //X92 = X89*X5*X8
+    let res92 = res89 * x5.value * x8.value;
+    x92.textContent = res92;
+    //X93 = X90*X6*X8
+    let res93 = res90 * x6.value * x8.value;
+    x93.textContent = res93;
+    //X94 = X91*X7*X8
+    let res94 = res91 * x7.value * x8.value;
+    x94.textContent = res94;
+
+
 });
